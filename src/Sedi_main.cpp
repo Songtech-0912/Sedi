@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_ttf.h>
+#include <SDL.h>
+#include <SDL_ttf.h>
 
 /* globals */
 
-char *USER_FONT = "font.ttf";
+const char *USER_FONT = "font.ttf";
 
 SDL_Color bg_color = { 20, 20, 20, 255 };
 SDL_Color text_color = { 150, 150, 150, 255 };
@@ -28,7 +28,7 @@ struct line {
 };
 
 char *
-file_read(char *filepath)
+file_read(const char *filepath)
 {
 	FILE *fp;
 	long size;
@@ -64,10 +64,11 @@ int
 main(int argc, char *argv[])
 {	
 	/* Parse file */
-	char *file = NULL, *filepath = argc > 1 ? argv[1] : "out.txt";
+	const char *file = NULL, *filepath = argc > 1 ? argv[1] : "out.txt";
 	
-	if (argc > 1)
+	if (argc > 1) {
 		file = file_read(filepath);
+    }
 	
 	/* Initialization */
 	
