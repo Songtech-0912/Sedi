@@ -1,0 +1,26 @@
+# TODO
+
+- [x] Switch to CMake
+- [x] Fix C++ compile errors
+- [ ] Use `<iostream>` and C++ strings rather than C strings
+- [ ] Refactor to avoid using heap as much as possible
+- [ ] Update code to modern C++11 standard instead of C-style syntax
+- [ ] Use Inter font or MonoLisa font and place within standalone `font/` directory
+- [ ] Better UI based off my design on CodePen
+- [ ] Select dropdown for code mode/prose mode
+- [ ] Use Heaptrack to debug for any memory errors
+- [ ] Typography styles for prose mode based off of Tailwind typography
+- [ ] App icon
+- [ ] Adapt build system to create `.app` for Mac, `.exe` for Windows, and for Linux, create `Sedi.desktop` and `Sedi.png`
+- [ ] Make releases automatic with GitHub actions
+- [ ] (Optional) syntax highlighting based on file extension (including for Markdown files)
+    - [ ] Find library for syntax highlighting
+    - [ ] Support syntax highlight for the following languages:
+        - [ ] Markdown, reStructuredText
+        - [ ] C, C++, C#, CMake
+        - [ ] HTML, CSS, JS, TypeScript
+        - [ ] Python, Go, Java, Lua, Julia
+        - [ ] Rust, Dart, D, F#, Ruby
+        - [ ] YAML, TOML, XML, TeX
+        - [ ] More languages: see [this](https://codemirror.net/mode/index.html)
+- [ ] Future: Better international font support by using [SDL-STB](https://github.com/SnapperTT/sdl_stb_font) for rendering
