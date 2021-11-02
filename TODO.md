@@ -2,7 +2,7 @@
 
 - [x] Switch to CMake
 - [x] Fix C++ compile errors
-- [ ] Use `<iostream>` and C++ strings rather than C strings
+- [ ] Use `<iostream>` and C++ strings rather than C-style strings
 - [ ] Refactor to avoid using heap as much as possible
 - [ ] Update code to modern C++11 standard instead of C-style syntax
 - [ ] Use Inter font or MonoLisa font and place within standalone `font/` directory
